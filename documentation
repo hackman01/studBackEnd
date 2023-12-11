@@ -1,0 +1,88 @@
+End points :-
+
+
+route.get('/get',getStudent);
+route.post('/add',addStudent);
+route.put('/update',updateStudent);
+route.delete('/delete',deleteStudent);
+route.post('/genPdf',genPdf);
+route.post('/percentPdf',percentPdfGen);
+
+
+post:/add -->
+
+
+
+[{
+    
+    "name": "Sahil",
+    "rollno" : 21011001000046
+    
+},
+{
+   
+   "name":"Anuj",
+   "rollno": 21011001000015
+   
+}]
+
+put:/update -->
+
+[
+    {      "_id": "643878bb752253f4bffa89e7",
+            "name": "Sahil",
+            "rollno": 21011001000046,
+            "attended_class": 1
+        },
+        {
+             "_id": "643878bb752253f4bffa89e8",
+            "name": "Anuj",
+            "rollno": 21011001000015,
+            "attended_class": 0
+        }
+]
+
+delete:/delete -->
+
+
+[
+    {"_id": "64386ee96f68fb002198789a"},
+    {"_id": "64386e31c3b73a64a7006f89"}
+]
+
+
+
+post:/genPdf -->
+
+[
+        {     
+            "name": "Sahil",
+            "rollno": 21011001000046,
+            "attended_class": 1
+        },
+        { 
+            "name": "Anuj",
+            "rollno": 21011001000015,
+            "attended_class": 0
+        }
+]
+
+
+
+
+post:/percentPdf -->
+
+
+[
+        {  
+            "name": "Sahil",
+            "rollno": 21011001000046,
+            "percent": 1
+        },
+        {
+            "name": "Anuj",
+            "rollno": 21011001000015,
+            "percent": 0
+        }
+]
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Report</title>
+  </head>
+  <body>
+    <h3>Detaintion List</h3>
+    
+    <table style="border: 1px solid black;border-collapse: collapse;">
+      <tr>
+        <th style="border: 1px solid black;border-collapse: collapse;padding: 8px;">Roll Number</th>
+        <th style="border: 1px solid black;border-collapse: collapse;padding: 8px;">Name</th>
+        <th style="border: 1px solid black;border-collapse: collapse;padding: 8px;">% Attendance</th>
+      </tr>
+      {{#each users}}
+      <tr>
+        <td style="border: 1px solid black;border-collapse: collapse;padding: 8px;">{{this.rollno}}</td>
+        <td style="border: 1px solid black;border-collapse: collapse;padding: 8px;">{{this.name}}</td>
+        <td style="border: 1px solid black;border-collapse: collapse;padding: 8px;">{{this.percent}}</td>
+      </tr>
+      {{/each}}
+    </table> 
+  </body>
+</html>
